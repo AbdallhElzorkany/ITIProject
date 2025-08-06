@@ -44,6 +44,7 @@
           >{{ item.category }}</a
         >
       </h6>
+
       <h5>
         <a
           routerLink="posts/{{ item.title }}"
@@ -63,4 +64,54 @@
     </div>
     }
   </div>
+</section>
+
+<section class="container py-5">
+  <hr />
+</section>
+
+<section>
+  <div class="container mx-auto py-5">
+    <h6 class="text-secondary fs-sm text-uppercase fw-bold">latest posts</h6>
+    <div class="row my-5">
+      @for (item of latestPosts; track $index) {
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <img [src]="item.img" class="w-100" alt="" />
+        <h6 class="mt-2">
+          <a
+            routerLink="category/{{ item.category }}"
+            class="libre text-uppercase fs-sm fw-semibold text-decoration-none text-secondary"
+            >{{ item.category }}</a
+          >
+        </h6>
+
+        <h5>
+          <a
+            routerLink="posts/{{ item.title }}"
+            class="tenor text-decoration-none text-uppercase text-black"
+            >{{ item.title }}</a
+          >
+        </h5>
+
+        <p class="text-uppercase libre fs-sm fw-semibold">
+          <span class="text-black">by</span>&nbsp;
+          <a
+            routerLink="team-members/{{ item.author }}"
+            class="text-decoration-none text-black"
+            >{{ item.author }}</a
+          >
+        </p>
+      </div>
+      }
+    </div>
+    <a
+      routerLink="latest-posts"
+      class="d-block libre text-uppercase my-5 mx-auto fs-sm fw-bold text-decoration-none text-black p-4 border border-2 border-black fit"
+      >view all latest posts</a
+    >
+  </div>
+</section>
+
+<section class="container py-5">
+  <hr />
 </section>
