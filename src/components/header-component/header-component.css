@@ -14,13 +14,12 @@
   .border-hover:hover::after {
     border: none !important;
   }
+  .click {
+    border: none !important;
+    box-shadow: 0px -32px 50px 0px black;
+  }
 }
 
 .outline {
   outline: none !important;
-}
-
-.click {
-  border: none !important;
-  box-shadow: 0px -32px 50px 0px black;
 }
