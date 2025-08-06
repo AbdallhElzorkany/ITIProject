@@ -1,1 +1,66 @@
-<p>home-component works!</p>
+<section class="my-5">
+  <div class="container row mx-auto">
+    <img class="col-lg-7 col-md-12" src="japan.jpeg" alt="" />
+    <div class="col-lg-5 col-md-12">
+      <h6 class="mt-2">
+        <a
+          routerLink="category/illustration"
+          class="libre text-uppercase fs-sm fw-semibold text-decoration-none text-secondary"
+          >illustration</a
+        >
+      </h6>
+      <h1>
+        <a
+          routerLink="posts/japan-house-opens"
+          class="tenor text-decoration-none text-uppercase text-black"
+          >Japan House opens in mountainside to foster peak creativity.</a
+        >
+      </h1>
+      <p class="text-decoration-none text-secondary source">
+        Enim omittam qui id, ex quo atqui dictas complectitur. Nec ad timeam
+        accusata, hinc justo falli id eum, ferri novum molestie eos cu.
+      </p>
+      <p class="text-uppercase libre fs-sm fw-semibold">
+        <span class="text-black">by</span>&nbsp;
+        <a
+          routerLink="team-members/reta-torphy"
+          class="text-decoration-none text-black"
+          >reta torphy</a
+        >
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container row mx-auto my-5">
+    @for (item of firstSection; track $index) {
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <img [src]="item.img" class="w-100" alt="" />
+      <h6 class="mt-2">
+        <a
+          routerLink="category/{{ item.category }}"
+          class="libre text-uppercase fs-sm fw-semibold text-decoration-none text-secondary"
+          >{{ item.category }}</a
+        >
+      </h6>
+      <h5>
+        <a
+          routerLink="posts/{{ item.title }}"
+          class="tenor text-decoration-none text-uppercase text-black"
+          >{{ item.title }}</a
+        >
+      </h5>
+
+      <p class="text-uppercase libre fs-sm fw-semibold">
+        <span class="text-black">by</span>&nbsp;
+        <a
+          routerLink="team-members/{{ item.author }}"
+          class="text-decoration-none text-black"
+          >{{ item.author }}</a
+        >
+      </p>
+    </div>
+    }
+  </div>
+</section>
