@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.11s ease-in-out;
   border-bottom: 0px solid #000;
 }
 .border-hover:hover::after {
