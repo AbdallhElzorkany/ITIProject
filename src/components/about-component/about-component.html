@@ -1,6 +1,8 @@
 <section>
   <div class="container mx-auto py-5 my-5">
-    <h6 class="my-5 text-secondary libre fs-sm text-uppercase fw-semibold">
+    <h6
+      class="my-5 text-secondary libre under fs-sm text-uppercase fw-semibold"
+    >
       about
     </h6>
     <h1 class="tenor text-uppercase title width text-black">
@@ -34,11 +36,12 @@
       pro eu, eum putent virtute vivendum te. Purto interpretaris signiferumque
       te eam, at mel saperet voluptua.
     </p>
-    <h6
+    <a
+      href=""
       class="libre text-uppercase fs-sm fw-semibold text-decoration-underline text-black"
     >
       Contact us
-    </h6>
+    </a>
   </div>
 </section>
 
@@ -78,15 +81,19 @@
       tation eligendi. Assum accommodare an mei. Sonet propriae partiendo ad
       vix, ex vis epicuri constituto incorrupte.
     </p>
-    <div class="row my-5 gap-3  mx-auto">
+    <div class="row my-5 gap-3 mx-auto">
       @for (item of touch; track $index) {
       <div class="cols p-5 text-center border-1 border border-black">
-        <h6 class="bg-black fit py-3 px-4 fw-bolder mx-auto my-4 text-white fw-bold rounded-circle">{{ item.num }}</h6>
+        <h6
+          class="bg-black fit py-3 px-4 fw-bolder mx-auto my-4 text-white fw-bold rounded-circle"
+        >
+          {{ item.num }}
+        </h6>
         <h6 class="mt-2 fs-sm libre text-uppercase fw-semibold text-secondary">
           {{ item.title }}
         </h6>
 
-        <p class="text-uppercase text-black source  ">
+        <p class="text-uppercase text-black source">
           {{ item.description }}
         </p>
       </div>

@@ -29,6 +29,10 @@ body {
   background-color: lightgray;
 }
 
-.fit{
+.fit {
   width: fit-content !important;
+}
+
+.under:hover {
+  text-decoration: underline !important;
 }
