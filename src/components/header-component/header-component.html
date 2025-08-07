@@ -1,6 +1,6 @@
 <nav
-class="navbar navbar-expand-lg bg-body-tertiary border-bottom p-0  padding position-sticky top-0"
-[ngClass]="collapse ? 'click' : ''"
+  class="navbar navbar-expand-lg bg-body-tertiary border-bottom p-0 padding position-sticky top-0"
+  [ngClass]="collapse ? 'click' : ''"
 >
   <div class="container d-flex justify-content-between">
     <a class="navbar-brand" routerLink="">
@@ -31,13 +31,13 @@ class="navbar navbar-expand-lg bg-body-tertiary border-bottom p-0  padding posit
     </a>
     <button
       (click)="toggleCollapse()"
-      class="navbar-toggler border-0 outline"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
       aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      class="navbar-toggler border-0"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
