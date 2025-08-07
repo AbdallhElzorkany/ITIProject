@@ -76,5 +76,38 @@ export class HomeComponent {
       author: 'Leo Bartell',
     },
   ];
+  public featuredPosts: {
+    img: string;
+    category: string;
+    title: string;
+    author: string;
+  }[] = [
+    {
+      img: 'brief.jpeg',
+      category: 'Graphic Design',
+      title: 'A Brief History of the FIFA World Cup Logo',
+      author: 'Clem Onojeghuo',
+    },
+    {
+      img: 'need.jpeg',
+      category: 'Graphic Design',
+      title:
+        'Need a guide to LA’s graphic design scene? Shoplifters’ new issue has got your back',
+      author: 'Alessandra Ortiz',
+    },
+    {
+      img: 'fred.jpeg',
+      category: 'Photography',
+      title: 'Fred Rowson directs film for Years and Years',
+      author: 'Coby Gottlieb',
+    },
+    {
+      img: 'mc.jpeg',
+      category: 'Illustration',
+      title:
+        'M&C Saatchi and Fontsmith collaborate on font collection for House of St Barnabas',
+      author: 'Annie Lueilwitz',
+    },
+  ];
   constructor() {}
 }
