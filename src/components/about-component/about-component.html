@@ -1,1 +1,96 @@
-<p>about-component works!</p>
+<section>
+  <div class="container mx-auto py-5 my-5">
+    <h6 class="my-5 text-secondary libre fs-sm text-uppercase fw-semibold">
+      about
+    </h6>
+    <h1 class="tenor text-uppercase title width text-black">
+      Clita incorrupte at vix. Nam te molestie iudicabit erroribus odio.
+    </h1>
+  </div>
+</section>
+
+<section class="cover my-5"></section>
+
+<section>
+  <div class="container mx-auto py-5 my-5 text-black">
+    <h5 class="tenor text-uppercase width">this is noiceland.</h5>
+    <p class="width mt-5 source">
+      Vim et dolore eligendi voluptua, qui id unum quas omittantur, at sed justo
+      tation eligendi. Assum accommodare an mei. Sonet propriae partiendo ad
+      vix, ex vis epicuri constituto incorrupte. Ut vim liber recteque
+      eloquentiam, qui te exerci forensibus. Eu pri ullum meliore tincidunt, an
+      ius aeque paulo saperet, eum modus tation an.
+    </p>
+    <p class="width source">
+      Vix mandamus deseruisse voluptatibus in. Ei pri epicurei indoctum. Aeterno
+      oportere at his. Nam prompta recteque dissentias id. Aperiam atomorum
+      iudicabit sed id, malis dicit pericula at vis.
+    </p>
+    <p class="width mb-5 source">
+      At sea scripta nostrud facilisis, his at nihil ubique sententiae, aeque
+      menandri urbanitas eu quo. Fastidii qualisque cum id. Tollit convenire
+      adversarium duo te. Te vim dictas virtute iudicabit, tibique omittam cum
+      ut, clita decore lucilius nec ei. Sit facer docendi ex, laoreet deserunt
+      pro eu, eum putent virtute vivendum te. Purto interpretaris signiferumque
+      te eam, at mel saperet voluptua.
+    </p>
+    <h6
+      class="libre text-uppercase fs-sm fw-semibold text-decoration-underline text-black"
+    >
+      Contact us
+    </h6>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="line"></div>
+</section>
+
+<section>
+  <div class="container mx-auto py-5">
+    <h3 class="text-black text-uppercase tenor">our team</h3>
+    <div class="row my-5">
+      @for (item of team; track $index) {
+      <div class="my-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <img [src]="item.img" class="w-100" alt="" />
+        <h5 class="mt-2 source fw-bold text-black">
+          {{ item.name }}
+        </h5>
+
+        <p class="text-uppercase text-secondary libre fs-sm fw-medium">
+          {{ item.title }}
+        </p>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="container pb-5">
+  <div class="line"></div>
+</section>
+
+<section>
+  <div class="container mx-auto py-5">
+    <h3 class="text-black text-uppercase tenor mb-5">Wanna get in touch?</h3>
+    <p class="source width text-black">
+      Vim et dolore eligendi voluptua, qui id unum quas omittantur, at sed justo
+      tation eligendi. Assum accommodare an mei. Sonet propriae partiendo ad
+      vix, ex vis epicuri constituto incorrupte.
+    </p>
+    <div class="row my-5 gap-3">
+      @for (item of touch; track $index) {
+      <div class="cols p-5 text-center border-1 border border-black">
+        <h6 class="bg-black fit py-3 px-4 fw-bolder mx-auto my-4 text-white fw-bold rounded-circle">{{ item.num }}</h6>
+        <h6 class="mt-2 fs-sm libre text-uppercase fw-semibold text-secondary">
+          {{ item.title }}
+        </h6>
+
+        <p class="text-uppercase text-black source  ">
+          {{ item.description }}
+        </p>
+      </div>
+      }
+    </div>
+  </div>
+</section>

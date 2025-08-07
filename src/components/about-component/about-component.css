@@ -1,0 +1,41 @@
+.title {
+  font-size: 3.5rem;
+}
+.width {
+  width: 75%;
+}
+.cols {
+  flex: 0 0 auto;
+  width: 23.5%;
+}
+@media (width<1200px) {
+  .cols {
+    width: 32%;
+  }
+}
+@media (width<992px) {
+  .title {
+    font-size: 2rem;
+  }
+  .width {
+    width: 100%;
+  }
+  .cols {
+    width: 48.5%;
+  }
+}
+@media (width<768px) {
+  .cols {
+    width: 100%;
+  }
+}
+
+.cover {
+  background-image: url("../../../public/about.jpg");
+  background-size: contain;
+  height: 35vw;
+  background-size: cover;
+  background-position: center;
+}
+
+
